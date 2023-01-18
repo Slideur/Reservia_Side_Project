@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fredoka:wght@500;600&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    box-sizing: border-box; 
+    font-family: "Raleway","Arial", "Helvetica", "sans-serif"
+}
+
+.bloc-page {
+    max-width: 1440px;      
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#logo {
+    margin-right: auto;
+    align-content:flex-start; 
+    
+    width: 104px;
+    height: auto;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+nav a {
+    padding: 2rem;
+}
+
+.nav__link {
+    display: flex;
+}
+
+
+.nav__link--formatting {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav__link--formatting:hover {
+    color: blue;
+    border-top: 2px solid blue;
+}
+
+.nav--inscrip:hover {
+    border: none;
+}
+
+.nav--inscrip {
+    color: blue;
+    font-weight: bold;
+}
+
+.subnav1 {
+    display: flex;
+}
+
+/*SEARCH*/
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.search {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.fa-solid {
+    width: 53px;
+    padding: 19px 20px;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search__box > .search__btn {
+    padding: 16px;
+}
+
+.search__box {
+    width: 224px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #F2F2F2;
+}
+
+.search__btn {
+    
+    width: 136px;
+    background-color: #0065FC;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 16px; 
+    color: white;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    cursor: pointer;
+}
+
+.fa.fa-search {
+    display: none;
+}
+
+/* FILTER */
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 19px 20px;
+    padding-left: 0px;
+    margin-top: 0px;
+    border-radius: 16px;
+    font-size: 1rem; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.eco, .fami, .roman, .ani {
+    display: flex;
+}
+
+.filter--heading {
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    cursor: auto;
+}
+
+.filter i {
+    width: 62px;
+    height: 62px;
+    color: #0065FC;
+    position: relative;
+    left: 26px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    
+}
+
+.btn {
+    background-color: white;
+    text-align: right;
+    padding-left: 40px;
+    border: 3px solid #F2F2F2;
+    border-left: none; 
+    border-radius: 0 32px 32px 0;
+}
+
+.info {
+    display:flex;
+    align-items: center;
+}
+
+.information {
+    width: 44px;
+    font-size: 32px;
+    background-color: white;
+    color: #0065FC;
+    padding: 32px;
+    padding-left: 0px;
+}
+
+.info p {
+    margin-bottom: 0px;
+}
+
+/* LODGE MARSEILLE */
+
+.container {
+    width: 950px;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+}
+
+.lodge {
+    display: flex;
+}
+
+.lodge__marseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    width: 900px;
+    border-radius: 16px;
+}
+
+.lodge__marseille--layout {
+    
+    transform: scale(1);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+
+.lodge__marseille--layout:hover {
+        transform: scale(1.05);
+}
+
+.lodge__marseille--layout {
+    width: 256px;
+    background-color: white;
+    box-shadow: 0 0 1rem #0000002e;
+    padding: 6px;
+    margin: 8px; 
+    border-radius: 16px;
+}
+
+.lodge__marseille--color {
+    color: #D9D9D9;
+    width: 1rem;
+    background-color: white;
+    padding: 0px;
+
+}
+
+img {
+    width: 15.25rem;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h2 {
+    padding-top: 2rem; 
+    margin-left: 24px;
+    margin-top: 0;
+}
+
+.heading {
+    padding-top: 2rem;
+    margin: 0;
+}
+
+.bluestar {
+    
+    width: 16px;
+    color: blue;
+    background-color: white;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+/* MOST POPULAR ASIDE */
+
+.box {
+    width: 28.125rem;
+    margin-left: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.50rem;
+    
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.box--headingGraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+
+}
+
+.graph {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.lodge__famous--popular {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.lodge__famous--star {
+    display: flex;
+    margin-top: 3rem;;
+}
+
+.starEau {
+    margin-top: 2rem;
+}
+
+.lodge__famous--img {
+    width: 7.672rem;
+    height: 8.084rem;
+    border-radius: 1.25rem 0 0 1.25rem;
+    
+}
+
+.lodge__famous--description {
+    display: flex;
+    width: 24rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: 0 0 1rem #0000002e;
+    border-radius: 1.25rem; 
+    transform: scale(1);
+    transition: 300ms;
+}
+
+.lodge__famous--description:hover {
+    transform: scale(1.03);
+}
+
+.third {
+    width: 108px;
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
+.imgSize {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+/* ACTIVITIES MARSEILLE */
+
+.viewMore {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    display:inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.visite {
+    display: flex;
+    flex-direction: column; 
+    width: 320px;
+    cursor: pointer;
+    transform: scale(1); 
+    transition: transform 300ms;
+
+}
+
+.visite:hover {
+    transform: scale(1.03);
+} 
+
+.image__activites {
+    width: 100%;
+    height: 100%;
+}       
+
+.activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 200px 40px 40px 40px 224px;
+    margin-bottom: 4rem;
+    
+}
+
+.activites__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+}
+    
+.port {
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+}
+
+.fort {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.ile {
+    grid-column: 2 / 3;
+    grid-row:  6 / 7;
+}
+
+.parc {
+    grid-column: 3 / 4;
+    grid-row: 2 / 7;
+}
+
+.dame {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.longchamp {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+}
+
+.port__picture {
+    width: auto;
+    height: 484px;
+}
+
+.fort__picture {
+    width: auto;
+    height: 228px; 
+}
+
+.ile__picture {
+
+    width: auto;
+    height: 164px;
+}
+
+.parc__picture {
+    width: auto;
+    height: 484px;
+}
+
+.dame__picture {
+    width: auto;
+    height: 164px;
+}
+
+.longchamp__picture {
+    width: auto;
+    height: 204px;
+}
+
+.heading__title {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 20px #0000002e;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+    margin-top: 0.8rem;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: 20rem;
+    padding-top: 3rem;
+    margin-left: 120px;
+}
+
+.boxes__propos {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes__links {
+    
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.boxes__links:hover {
+    
+    text-decoration: underline;
+} 
+
+.boxes__propos--links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.boxes__hebergements {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes__hebergements--links {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes__assistance {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes__assistance--links {
+    display: flex;
+    flex-direction:column;
+}
+
+.title__footer {
+    padding-bottom: 0.5rem;
+}
+
+/* MEDIA QUERIES RESPONSIVE 600px */
+
+@media screen and (max-width: 600px) {
+
+    /* NAV */
+    
+    .navacti--format {
+        text-align: center;
+    }
+    
+    .subnav1 {
+        order: 1;
+        flex-basis: 100%; 
+        justify-content: space-between;
+    } 
+    
+    .subnav1 a {
+        width: 50%;
+    }
+
+    /* SEARCH */
+
+    .headsearch {
+        margin-left: 2rem;
+    }
+
+    h1 {
+        margin-top: 4rem;
+    }
+
+    .text__find {
+        display: none;
+    }
+
+    .search__btn {
+        
+        width: 64px;
+        height: 53px;
+    }
+
+    .fa.fa-search {
+        display: block;
+    }
+
+    /* FILTER */
+
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter--heading {
+        margin-left: 2rem;
+        align-self: flex-start;
+    }
+
+    .eco, .fami, .roman, .ani {
+        margin-bottom: 1rem;
+    }
+    
+    .info {
+        margin-left: 2rem;
+    }
+
+    /* LODGE MARSEILLE */
+
+    .lodge {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lodge > .box {
+        order: -1;
+    }
+
+    .lodge > .container {
+        order: 2;
+    }
+
+    .box {
+        width: 500px;
+        margin-bottom: 1rem;
+    }
+
+    .heading {
+        margin-left: 6rem;
+    }
+
+    .lodge__marseille {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1.2rem;
+        
+        
+    }
+
+    .lodge__marseille--layout {
+        width: 443px;
+    }
+    
+    .marseille__picture {
+        width: 431px;
+    } 
+
+    .lodge__famous {
+        margin-left: 1rem;
+    }
+
+    .lodge__famous--description {
+        width: 443px;
+    }
+
+    .lodge__marseille--layout > h3  {
+        text-align: left;
+    }
+
+    .lodge__marseille--layout > p {
+        text-align: left;
+    }
+
+    .star {
+        text-align: left;
+    }
+
+    .tarif__lodge {
+        margin-bottom: 0px;
+    }
+
+    /* MOST POPULAR ASIDE */
+
+    .container {
+        width: 500px;
+        margin-left: 22px; 
+        display:flex;
+        flex-direction: column;
+        
+        }
+
+    .container > h2 {
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .afficher {
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* ACTIVITIES MARSEILLE */
+
+    .image {
+        width: 540px;
+    }
+
+    .visite {
+        
+        margin-bottom: 2rem;
+        background-color: white;
+        padding-bottom: 2rem;
+        width: 507px;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform 300ms;
+    }
+
+    .visite:hover {
+            transform: scale(1.03);
+        }
+
+    .activites {
+        grid-template-columns: 507px;
+        grid-template-rows: auto repeat(6,210px);
+        
+    }
+
+    .activites__title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+        
+    .port {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .fort {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .ile {
+        grid-column: 1 / 2;
+        grid-row:  4 / 5;
+    }
+    
+    .parc {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .dame {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+    
+    .longchamp {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+
+    .image__activites {
+        height: 132px;
+    }
+
+    .heading__title {
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 20px #0000002e;
+        border-radius: 0 0 1rem 1rem;
+        padding: 1rem;
+    }
+
+    /* FOOTER */
+
+    .boxes {
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    .boxes__propos {
+        margin-top: 6rem;
+    }
+
+    .boxes__hebergements {
+        margin-top: 2rem;
+    }
+
+    .boxes__assistance {
+        margin-top: 2rem;
+    }
+
+}
+
+    
+    
+    
+    
+
+    
+   
+    
+
+   
+    
+
+    
+
+    
+
+    
+
+   
+
+   
+
+    
+    
+    
+    
+
+   
+    
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
