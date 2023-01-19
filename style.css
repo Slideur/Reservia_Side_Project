@@ -581,6 +581,19 @@ footer {
 
     /* LODGE MARSEILLE */
 
+    .container {
+        width: 500px;
+        margin-left: 22px; 
+        display:flex;
+        flex-direction: column;
+        
+        }
+
+    .container > h2 {
+        text-align: center;
+        margin-right: 2rem;
+    }
+
     .lodge {
         display: flex;
         flex-direction: column;
@@ -594,21 +607,11 @@ footer {
         order: 2;
     }
 
-    .box {
-        width: 500px;
-        margin-bottom: 1rem;
-    }
-
-    .heading {
-        margin-left: 6rem;
-    }
-
     .lodge__marseille {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-left: 1.2rem;
-        
         
     }
 
@@ -619,14 +622,6 @@ footer {
     .marseille__picture {
         width: 431px;
     } 
-
-    .lodge__famous {
-        margin-left: 1rem;
-    }
-
-    .lodge__famous--description {
-        width: 443px;
-    }
 
     .lodge__marseille--layout > h3  {
         text-align: left;
@@ -643,21 +638,29 @@ footer {
     .tarif__lodge {
         margin-bottom: 0px;
     }
-
+    
     /* MOST POPULAR ASIDE */
 
-    .container {
+    .box {
         width: 500px;
-        margin-left: 22px; 
-        display:flex;
-        flex-direction: column;
-        
-        }
-
-    .container > h2 {
-        text-align: center;
-        margin-right: 2rem;
+        margin-bottom: 1rem;
     }
+
+    .heading {
+        margin-left: 6rem;
+    }
+
+
+    .lodge__famous {
+        margin-left: 1rem;
+    }
+
+    .lodge__famous--description {
+        width: 443px;
+    }
+
+
+
 
     .afficher {
         text-align: left;
@@ -690,7 +693,7 @@ footer {
 
     .visite:hover {
             transform: scale(1.03);
-        }
+    }
 
     .activites {
         grid-template-columns: 507px;
@@ -764,6 +767,124 @@ footer {
     }
 
 }
+
+/* MEDIA QUERIES RESPONSIVE 375px */
+
+@media screen and (max-width: 375px) {
+    
+    /* MOST POPULAR ASIDE */
+
+     .box {
+        width: 320px;
+        margin-left: 1.2rem;
+    }
+
+     .lodge__famous {
+        width: 279px;
+    }
+
+    .lodge__famous--description {
+        width: 247px;
+        height: 148px;
+    }
+
+    .lodge__famous--popular {
+        height: 128px;
+        padding-top: 0.5rem;
+    }
+
+    .lodge__famous--popular > h3 {
+        width: 133px;
+    }
+
+    .lodge__famous--water {
+        padding-top: 0px;
+    }
+
+    .lodge__famous--waterprice {
+        margin-bottom: 12px;
+    }
+
+    .third {
+        height: 132px;
+    }
+
+    .lodge__famous--sunprice {
+        margin-bottom: 24px;
+    }
+
+    .lodge__famous--blueprice {
+        margin-bottom: 32px;
+    }
+
+
+    .lodge__famous--img {
+        width: 77.55px;
+        height: 132px;
+    }
+
+    .lodge__famous--star {
+        margin: 0px;
+    }
+
+    /* LODGE MAESEILLE */
+
+    .container {
+        width: 320px;
+        margin-left: 1.2rem;
+    }
+
+    .lodge__marseille {
+        margin-left: 1.7rem;
+    }
+
+    .lodge__marseille--layout {
+        width: 247px;
+    }
+
+    .marseille__picture {
+        width: 235px;
+    }
+
+    .viewMore {
+        margin-bottom: 1rem;
+    }
+
+    /* ACTIVITIES MARSEILLE */
+
+    .visite {
+        width: 274px;
+    }
+    
+    .activites {
+        grid-template-columns: 247px;
+        grid-template-rows: auto repeat(6,235px);
+        margin-bottom: 0px;
+        margin-left: 1.2rem;
+    }
+
+    .activites__title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-left: 1.05rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        
+        /* border: 1px solid red; */
+        
+    }
+    
+    .boxes {
+        width: 320px;
+        height: auto;
+        /* border: 1px solid green; */
+    } 
+
+}
+
 
     
     
